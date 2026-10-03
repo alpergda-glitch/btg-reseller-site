@@ -1,0 +1,135 @@
+[
+  {
+    "name": "PUBG",
+    "short": "PG",
+    "status": "Aktif",
+    "packages": [
+      {
+        "days": 1,
+        "price": 279
+      },
+      {
+        "days": 7,
+        "price": 1299
+      },
+      {
+        "days": 30,
+        "price": 3299
+      }
+    ]
+  },
+  {
+    "name": "WARDOGS",
+    "short": "WD",
+    "status": "Aktif",
+    "packages": [
+      {
+        "days": 1,
+        "price": 229
+      },
+      {
+        "days": 7,
+        "price": 749
+      },
+      {
+        "days": 30,
+        "price": 2099
+      }
+    ]
+  },
+  {
+    "name": "Rust",
+    "short": "RU",
+    "status": "Aktif",
+    "packages": [
+      {
+        "days": 1,
+        "price": 349
+      },
+      {
+        "days": 7,
+        "price": 1699
+      },
+      {
+        "days": 30,
+        "price": 2799
+      }
+    ]
+  },
+  {
+    "name": "Valorant",
+    "short": "VA",
+    "status": "Aktif",
+    "packages": [
+      {
+        "days": 1,
+        "price": 329
+      },
+      {
+        "days": 7,
+        "price": 1099
+      },
+      {
+        "days": 30,
+        "price": 2199
+      }
+    ]
+  },
+  {
+    "name": "Apex Legends",
+    "short": "AP",
+    "status": "Aktif",
+    "packages": [
+      {
+        "days": 1,
+        "price": 239
+      },
+      {
+        "days": 7,
+        "price": 599
+      },
+      {
+        "days": 30,
+        "price": 1299
+      }
+    ]
+  },
+  {
+    "name": "DayZ",
+    "short": "DZ",
+    "status": "Aktif",
+    "packages": [
+      {
+        "days": 1,
+        "price": 349
+      },
+      {
+        "days": 7,
+        "price": 1299
+      },
+      {
+        "days": 30,
+        "price": 2499
+      }
+    ]
+  },
+  {
+    "name": "ARC Raiders",
+    "short": "AR",
+    "status": "Aktif",
+    "packages": [
+      {
+        "days": 1,
+        "price": 329
+      },
+      {
+        "days": 7,
+        "price": 1549
+      },
+      {
+        "days": 30,
+        "price": 2599
+      }
+    ]
+  }
+]
