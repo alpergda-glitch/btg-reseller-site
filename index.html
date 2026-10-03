@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070a12">
+  <title>BTG Soft Türkiye Reseller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#anasayfa">
+      <span class="brand-mark">B</span>
+      <span><strong>BTG SOFT</strong><small>Türkiye Reseller</small></span>
+    </a>
+    <nav>
+      <a href="#anasayfa">Ana Sayfa</a>
+      <a href="#urunler">Ürünler</a>
+      <a href="#guncellemeler">Güncellemeler</a>
+      <a href="#sss">SSS</a>
+    </nav>
+    <a class="header-cta" href="#urunler">Ürünleri Gör</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="anasayfa">
+      <div class="hero-copy">
+        <div class="eyebrow">TÜRKİYE RESELLER SATIŞ NOKTASI</div>
+        <h1>BTG ürünlerine <span>hızlı erişim</span>, net fiyatlandırma.</h1>
+        <p>Oyununu ve paket süreni seç. Siparişini oluştur, ödeme onayından sonra ürün anahtarın hazırlanıp teslim edilir.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#urunler">Paketleri İncele</a>
+          <a class="btn ghost" href="#guncellemeler">Son Güncellemeler</a>
+        </div>
+      </div>
+
+      <aside class="status-card">
+        <div class="status-head">
+          <div><small>CANLI DURUM</small><h3>Ürün Merkezi</h3></div>
+          <span class="online">Online</span>
+        </div>
+        <div id="heroStatusList"></div>
+      </aside>
+    </section>
+
+    <section class="section" id="urunler">
+      <div class="section-heading">
+        <div><div class="eyebrow">ÜRÜNLER</div><h2>Oyununu seç</h2></div>
+        <p>1, 7 ve 30 günlük paketler. Açılış fiyatlarımız TL olarak listelenir.</p>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section class="section" id="guncellemeler">
+      <div class="section-heading">
+        <div><div class="eyebrow">SON DURUM</div><h2>En Son Güncellemeler</h2></div>
+        <p>Telegram entegrasyonu tamamlandığında güncellemeler bu alana otomatik aktarılacak.</p>
+      </div>
+      <div class="updates-shell">
+        <div class="updates-topbar"><span><i></i> Güncelleme Merkezi</span><button id="refreshUpdates">Yenile</button></div>
+        <div id="updatesList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="sss">
+      <div class="section-heading"><div><div class="eyebrow">YARDIM</div><h2>Sık Sorulan Sorular</h2></div></div>
+      <div class="faq-list">
+        <details><summary>Bu site BTG Soft'un ana sitesi mi?</summary><p>Hayır. Burası BTG Soft ürünleri için bağımsız Türkiye reseller satış kanalıdır.</p></details>
+        <details><summary>Teslimat nasıl yapılacak?</summary><p>Ödeme onayından sonra ilgili ürün anahtarı sipariş kaydına bağlı olarak teslim edilir.</p></details>
+        <details><summary>Ürün durumunu nereden takip ederim?</summary><p>En Son Güncellemeler alanından ürünlerin güncel durumunu takip edebilirsin.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>BTG SOFT Türkiye Reseller</strong><p>Bağımsız reseller satış kanalıdır. BTG Soft ana sitesi değildir.</p></div>
+    <div><a href="#urunler">Ürünler</a> · <a href="#guncellemeler">Güncellemeler</a> · <a href="#sss">SSS</a></div>
+  </footer>
+
+  <div class="modal-backdrop" id="orderModal" hidden>
+    <div class="modal">
+      <button id="modalClose" class="modal-close">×</button>
+      <small>SİPARİŞ ÖZETİ</small>
+      <h3>Sipariş oluştur</h3>
+      <div id="modalProduct" class="modal-product"></div>
+      <label>İletişim bilgisi<input id="contactInput" placeholder="Discord / Telegram kullanıcı adın"></label>
+      <button class="btn primary block" id="createOrder">Sipariş Özeti Oluştur</button>
+      <p class="note">Ödeme entegrasyonu sonraki aşamada eklenecek.</p>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
